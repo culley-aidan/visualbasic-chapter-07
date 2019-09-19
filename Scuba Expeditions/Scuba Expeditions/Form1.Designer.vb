@@ -27,12 +27,14 @@ Partial Class frmScuba
         Me.cboLocation = New System.Windows.Forms.ComboBox()
         Me.lblTeam = New System.Windows.Forms.Label()
         Me.txtTeam = New System.Windows.Forms.TextBox()
+        Me.lblSelect = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lblSelect)
         Me.Panel1.Controls.Add(Me.txtTeam)
         Me.Panel1.Controls.Add(Me.lblTeam)
         Me.Panel1.Controls.Add(Me.cboLocation)
@@ -82,6 +84,16 @@ Partial Class frmScuba
         Me.txtTeam.Size = New System.Drawing.Size(32, 31)
         Me.txtTeam.TabIndex = 3
         '
+        'lblSelect
+        '
+        Me.lblSelect.AutoSize = True
+        Me.lblSelect.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSelect.Location = New System.Drawing.Point(116, 169)
+        Me.lblSelect.Name = "lblSelect"
+        Me.lblSelect.Size = New System.Drawing.Size(194, 25)
+        Me.lblSelect.TabIndex = 4
+        Me.lblSelect.Text = "Select Scuba Dive:"
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -103,4 +115,5 @@ Partial Class frmScuba
     Friend WithEvents cboLocation As ComboBox
     Friend WithEvents lblTeam As Label
     Friend WithEvents txtTeam As TextBox
+    Friend WithEvents lblSelect As Label
 End Class
