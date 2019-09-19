@@ -136,4 +136,8 @@ Public Class frmScuba
         Return blnValidityCheck
     End Function
 
+    Private Function ValidateDiveSelection(ByRef blnDive As Boolean, ByRef strDive As String) As Integer
+        ' This function ensures the user selected a dive type
+    End Function
+
 End Class
