@@ -86,7 +86,7 @@ Public Class frmScuba
         ' Call a function to ensure the number of people in the dive team is valid
         blnNumberInTeamIsValid = ValidateNumberInTeam()
         ' Call a function to ensure a scuba dive was selected
-
+        intDiveChoice = ValidateDiveSelection(blnDiverIsSelected, strSelectedTeam)
         ' if number of people and the dive trip are valid, calculate the cost
         If (blnNumberInTeamIsValid And blnDiverIsSelected) Then
             intTeamSize = Convert.ToInt32(txtTeam.Text)
@@ -138,6 +138,17 @@ Public Class frmScuba
 
     Private Function ValidateDiveSelection(ByRef blnDive As Boolean, ByRef strDive As String) As Integer
         ' This function ensures the user selected a dive type
+        Dim intDiveType As Integer
+        Try
+            intDiveType = Convert.ToInt32(lstDive.SelectedIndex)
+            strDive = lstDive.SelectedItem.ToString()
+            blnDive = True
+        Catch Exception As SystemException
+            ' Detects if a dive type is not selected 
+            MsgBox("Select a Dive Type", , "Error")
+            blnDive = False
+        End Try
+        Return intDiveType
     End Function
 
 End Class
