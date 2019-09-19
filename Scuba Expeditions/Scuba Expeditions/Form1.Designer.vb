@@ -24,12 +24,14 @@ Partial Class frmScuba
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.cboLocation = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.cboLocation)
         Me.Panel1.Controls.Add(Me.lblTitle)
         Me.Panel1.Location = New System.Drawing.Point(430, 0)
         Me.Panel1.Name = "Panel1"
@@ -46,6 +48,16 @@ Partial Class frmScuba
         Me.lblTitle.Size = New System.Drawing.Size(417, 34)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Oceanic Scuba Expeditions"
+        '
+        'cboLocation
+        '
+        Me.cboLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboLocation.FormattingEnabled = True
+        Me.cboLocation.Location = New System.Drawing.Point(130, 72)
+        Me.cboLocation.Name = "cboLocation"
+        Me.cboLocation.Size = New System.Drawing.Size(159, 32)
+        Me.cboLocation.TabIndex = 1
+        Me.cboLocation.Text = "Select Location:"
         '
         'frmScuba
         '
@@ -65,4 +77,5 @@ Partial Class frmScuba
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblTitle As Label
+    Friend WithEvents cboLocation As ComboBox
 End Class
