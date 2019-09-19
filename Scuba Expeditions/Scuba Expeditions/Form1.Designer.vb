@@ -28,12 +28,14 @@ Partial Class frmScuba
         Me.lblTeam = New System.Windows.Forms.Label()
         Me.txtTeam = New System.Windows.Forms.TextBox()
         Me.lblSelect = New System.Windows.Forms.Label()
+        Me.lstDive = New System.Windows.Forms.ListBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lstDive)
         Me.Panel1.Controls.Add(Me.lblSelect)
         Me.Panel1.Controls.Add(Me.txtTeam)
         Me.Panel1.Controls.Add(Me.lblTeam)
@@ -94,6 +96,16 @@ Partial Class frmScuba
         Me.lblSelect.TabIndex = 4
         Me.lblSelect.Text = "Select Scuba Dive:"
         '
+        'lstDive
+        '
+        Me.lstDive.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstDive.FormattingEnabled = True
+        Me.lstDive.ItemHeight = 24
+        Me.lstDive.Location = New System.Drawing.Point(123, 197)
+        Me.lstDive.Name = "lstDive"
+        Me.lstDive.Size = New System.Drawing.Size(120, 76)
+        Me.lstDive.TabIndex = 5
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -116,4 +128,5 @@ Partial Class frmScuba
     Friend WithEvents lblTeam As Label
     Friend WithEvents txtTeam As TextBox
     Friend WithEvents lblSelect As Label
+    Friend WithEvents lstDive As ListBox
 End Class
