@@ -3,6 +3,7 @@
 ' Date:         September 19th, 2019
 ' Purpose:      The Scuba Epeditions app determins the location and scuba dives available and calculates the total dive team cost.
 
+Option Strict On
 Public Class frmScuba
 
 End Class
