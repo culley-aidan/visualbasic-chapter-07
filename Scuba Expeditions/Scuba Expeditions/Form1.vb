@@ -95,6 +95,7 @@ Public Class frmScuba
                 Case 0
                     decTotalCost = AustraliaDiveCost(intDiveChoice, intTeamSize, intLength)
                 Case 1
+                    decTotalCost = BelizeDiveCost(intDiveChoice, intTeamSize, intLength)
                 Case 2
             End Select
             ' Display the cost of the scuba dive
@@ -182,6 +183,16 @@ Public Class frmScuba
         Dim decBelizeDive4 As Decimal = 200D
         Dim decBelizeDive5 As Decimal = 150D
 
-
+        Select Case intDive
+            Case 0
+                decTeamCost = decBelizeDive4
+                intTime = _intEightHour
+            Case 1
+                decTeamCost = decBelizeDive5
+                intTime = _intSixHour
+        End Select
+        decFinalCost = decTeamCost * intTeam
+        Return decFinalCost
     End Function
+
 End Class
