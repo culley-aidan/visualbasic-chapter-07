@@ -17,4 +17,7 @@ Public Class frmScuba
     Private _strDive5 As String = "Rainbow reef"
     Private _strDive6 As String = "Namena Sunken Ship"
 
+    Private Sub CboLocation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboLocation.SelectedIndexChanged
+
+    End Sub
 End Class
