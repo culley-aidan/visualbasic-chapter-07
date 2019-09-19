@@ -29,12 +29,14 @@ Partial Class frmScuba
         Me.txtTeam = New System.Windows.Forms.TextBox()
         Me.lblSelect = New System.Windows.Forms.Label()
         Me.lstDive = New System.Windows.Forms.ListBox()
+        Me.btnDiveCost = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.btnDiveCost)
         Me.Panel1.Controls.Add(Me.lstDive)
         Me.Panel1.Controls.Add(Me.lblSelect)
         Me.Panel1.Controls.Add(Me.txtTeam)
@@ -106,6 +108,17 @@ Partial Class frmScuba
         Me.lstDive.Size = New System.Drawing.Size(120, 76)
         Me.lstDive.TabIndex = 5
         '
+        'btnDiveCost
+        '
+        Me.btnDiveCost.BackColor = System.Drawing.Color.MidnightBlue
+        Me.btnDiveCost.ForeColor = System.Drawing.Color.White
+        Me.btnDiveCost.Location = New System.Drawing.Point(41, 293)
+        Me.btnDiveCost.Name = "btnDiveCost"
+        Me.btnDiveCost.Size = New System.Drawing.Size(75, 23)
+        Me.btnDiveCost.TabIndex = 6
+        Me.btnDiveCost.Text = "Dive Cost"
+        Me.btnDiveCost.UseVisualStyleBackColor = False
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,4 +142,5 @@ Partial Class frmScuba
     Friend WithEvents txtTeam As TextBox
     Friend WithEvents lblSelect As Label
     Friend WithEvents lstDive As ListBox
+    Friend WithEvents btnDiveCost As Button
 End Class
