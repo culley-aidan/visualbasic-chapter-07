@@ -151,4 +151,8 @@ Public Class frmScuba
         Return intDiveType
     End Function
 
+    Private Function AustraliaDiveCost(ByVal intDive As Integer, ByVal intTeam As Integer, ByRef intTime As Integer) As Decimal
+        ' This function calculates the cost of the dive team in Australia
+    End Function
+
 End Class
