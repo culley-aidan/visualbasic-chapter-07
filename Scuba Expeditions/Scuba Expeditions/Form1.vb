@@ -25,6 +25,7 @@ Public Class frmScuba
         lstDive.Items.Clear()
         Select Case intLocationChoice
             Case 0
+                AustraliaTeam()
             Case 1
             Case 2
         End Select
@@ -45,6 +46,13 @@ Public Class frmScuba
         lblLength.Text = ""
         ' Set focus on number in dive team text box
         txtTeam.Focus()
+    End Sub
+
+    Private Sub AustraliaTeam()
+        ' This procedure fills in the possible dive types offered in australia
+        lstDive.Items.Add(_strDive1)
+        lstDive.Items.Add(_strDive2)
+        lstDive.Items.Add(_strDive3)
     End Sub
 
 End Class
