@@ -31,12 +31,14 @@ Partial Class frmScuba
         Me.lstDive = New System.Windows.Forms.ListBox()
         Me.btnDiveCost = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.lblScubaDive = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lblScubaDive)
         Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnDiveCost)
         Me.Panel1.Controls.Add(Me.lstDive)
@@ -107,16 +109,16 @@ Partial Class frmScuba
         Me.lstDive.ItemHeight = 24
         Me.lstDive.Location = New System.Drawing.Point(123, 197)
         Me.lstDive.Name = "lstDive"
-        Me.lstDive.Size = New System.Drawing.Size(120, 76)
+        Me.lstDive.Size = New System.Drawing.Size(176, 76)
         Me.lstDive.TabIndex = 5
         '
         'btnDiveCost
         '
         Me.btnDiveCost.BackColor = System.Drawing.Color.MidnightBlue
         Me.btnDiveCost.ForeColor = System.Drawing.Color.White
-        Me.btnDiveCost.Location = New System.Drawing.Point(41, 293)
+        Me.btnDiveCost.Location = New System.Drawing.Point(53, 293)
         Me.btnDiveCost.Name = "btnDiveCost"
-        Me.btnDiveCost.Size = New System.Drawing.Size(75, 23)
+        Me.btnDiveCost.Size = New System.Drawing.Size(131, 45)
         Me.btnDiveCost.TabIndex = 6
         Me.btnDiveCost.Text = "Dive Cost"
         Me.btnDiveCost.UseVisualStyleBackColor = False
@@ -127,10 +129,20 @@ Partial Class frmScuba
         Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(233, 293)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.Size = New System.Drawing.Size(131, 45)
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear Form"
         Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'lblScubaDive
+        '
+        Me.lblScubaDive.AutoSize = True
+        Me.lblScubaDive.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScubaDive.Location = New System.Drawing.Point(130, 360)
+        Me.lblScubaDive.Name = "lblScubaDive"
+        Me.lblScubaDive.Size = New System.Drawing.Size(180, 25)
+        Me.lblScubaDive.TabIndex = 8
+        Me.lblScubaDive.Text = "XXXXXXXXXXXX"
         '
         'frmScuba
         '
@@ -157,4 +169,5 @@ Partial Class frmScuba
     Friend WithEvents lstDive As ListBox
     Friend WithEvents btnDiveCost As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents lblScubaDive As Label
 End Class
