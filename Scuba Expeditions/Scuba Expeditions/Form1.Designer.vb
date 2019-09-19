@@ -135,6 +135,7 @@ Partial Class frmScuba
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.MidnightBlue
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(233, 293)
         Me.btnClear.Name = "btnClear"

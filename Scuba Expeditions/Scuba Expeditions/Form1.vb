@@ -219,4 +219,8 @@ Public Class frmScuba
         Return decFinalCost
     End Function
 
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' This event handler clears the form and resets the form for reuse when the user clicks the Clear button.
+
+    End Sub
 End Class
