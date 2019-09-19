@@ -84,7 +84,7 @@ Public Class frmScuba
         Dim decTotalCost As Decimal
 
         ' Call a function to ensure the number of people in the dive team is valid
-
+        blnNumberInTeamIsValid = ValidateNumberInTeam()
         ' Call a function to ensure a scuba dive was selected
 
         ' if number of people and the dive trip are valid, calculate the cost
@@ -110,6 +110,30 @@ Public Class frmScuba
         Dim blnValidityCheck As Boolean = False
         Dim strNumberInTeamMessage As String = "Please enter the number of people in your dive team (2-6)"
         Dim strMessageBoxTitle As String = "Error"
+
+        Try
+            intTeamSize = Convert.ToInt32(txtTeam.Text)
+            If intTeamSize >= 2 And intTeamSize <= 6 Then
+                blnValidityCheck = True
+            Else
+                MsgBox(strNumberInTeamMessage, , strMessageBoxTitle)
+                txtTeam.Focus()
+                txtTeam.Clear()
+            End If
+        Catch Exception As FormatException
+            MsgBox(strNumberInTeamMessage, , strMessageBoxTitle)
+            txtTeam.Focus()
+            txtTeam.Clear()
+        Catch Exception As OverflowException
+            MsgBox(strNumberInTeamMessage, , strMessageBoxTitle)
+            txtTeam.Focus()
+            txtTeam.Clear()
+        Catch Exception As SystemException
+            MsgBox(strNumberInTeamMessage, , strMessageBoxTitle)
+            txtTeam.Focus()
+            txtTeam.Clear()
+        End Try
+        Return blnValidityCheck
     End Function
 
 End Class
