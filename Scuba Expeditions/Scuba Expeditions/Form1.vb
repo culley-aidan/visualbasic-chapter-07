@@ -71,6 +71,17 @@ Public Class frmScuba
     End Sub
 
     Private Sub BtnDiveCost_Click(sender As Object, e As EventArgs) Handles btnDiveCost.Click
+        ' This button event handler determins the cost of scuba expeditions and
+        ' displays the size of the dive team, the cost, and the length of the dive
+
+        Dim intTeamSize As Integer
+        Dim blnNumberInTeamIsValid As Boolean = False
+        Dim blnDiverIsSelected As Boolean = False
+        Dim intDiveChoice As Integer
+        Dim strSelectedTeam As String = ""
+        Dim intLocationChoice As Integer
+        Dim intLength As Integer = 0
+        Dim decTotalCost As Decimal
 
     End Sub
 End Class
