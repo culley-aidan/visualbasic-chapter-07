@@ -175,4 +175,8 @@ Public Class frmScuba
         Return decFinalCost
     End Function
 
+    Private Function BelizeDiveCost(ByVal intDive As Integer, ByVal intTeam As Integer, ByRef intTime As Integer) As Decimal
+        ' This function calculates the cost of the dive team in Belize
+
+    End Function
 End Class
