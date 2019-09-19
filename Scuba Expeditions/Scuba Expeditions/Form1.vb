@@ -18,6 +18,33 @@ Public Class frmScuba
     Private _strDive6 As String = "Namena Sunken Ship"
 
     Private Sub CboLocation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboLocation.SelectedIndexChanged
+        ' This event handler allows the user to enter the location choice and then calls subprocedures to place the dive types in the list.
+        Dim intLocationChoice As Integer
 
+        intLocationChoice = cboLocation.SelectedIndex
+        lstDive.Items.Clear()
+        Select Case intLocationChoice
+            Case 0
+            Case 1
+            Case 2
+        End Select
+
+        ' Make items visible in the window 
+        lblTeam.Visible = True
+        txtTeam.Visible = True
+        lblSelect.Visible = True
+        lstDive.Visible = True
+        btnDiveCost.Visible = True
+        btnClear.Visible = True
+        lblScubaDive.Visible = True
+        lblCost.Visible = True
+        lblLength.Visible = True
+        ' Clear the labels
+        lblScubaDive.Text = ""
+        lblCost.Text = ""
+        lblLength.Text = ""
+        ' Set focus on number in dive team text box
+        txtTeam.Focus()
     End Sub
+
 End Class
