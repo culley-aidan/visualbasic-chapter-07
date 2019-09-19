@@ -93,6 +93,7 @@ Public Class frmScuba
             intLocationChoice = cboLocation.SelectedIndex
             Select Case intLocationChoice
                 Case 0
+                    decTotalCost = AustraliaDiveCost(intDiveChoice, intTeamSize, intLength)
                 Case 1
                 Case 2
             End Select
@@ -159,7 +160,19 @@ Public Class frmScuba
         Dim decAustraliaDive2 As Decimal = 280D
         Dim decAustraliaDive3 As Decimal = 125D
 
-
+        Select Case intDive
+            Case 0
+                decTeamCost = decAustraliaDive1
+                intTime = _intEightHour
+            Case 1
+                decTeamCost = decAustraliaDive2
+                intTime = _intSixHour
+            Case 2
+                decTeamCost = decAustraliaDive3
+                intTime = _intFourHour
+        End Select
+        decFinalCost = decTeamCost * intTeam
+        Return decFinalCost
     End Function
 
 End Class
