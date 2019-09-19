@@ -237,4 +237,8 @@ Public Class frmScuba
         lblCost.Visible = False
         lblLength.Visible = False
     End Sub
+
+    Private Sub FrmScuba_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Hold the splash screen for 5 seconds
+    End Sub
 End Class
