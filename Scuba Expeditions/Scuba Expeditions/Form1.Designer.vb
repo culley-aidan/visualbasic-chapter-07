@@ -32,12 +32,14 @@ Partial Class frmScuba
         Me.btnDiveCost = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.lblScubaDive = New System.Windows.Forms.Label()
+        Me.lblCost = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lblCost)
         Me.Panel1.Controls.Add(Me.lblScubaDive)
         Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnDiveCost)
@@ -144,6 +146,16 @@ Partial Class frmScuba
         Me.lblScubaDive.TabIndex = 8
         Me.lblScubaDive.Text = "XXXXXXXXXXXX"
         '
+        'lblCost
+        '
+        Me.lblCost.AutoSize = True
+        Me.lblCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCost.Location = New System.Drawing.Point(130, 381)
+        Me.lblCost.Name = "lblCost"
+        Me.lblCost.Size = New System.Drawing.Size(180, 25)
+        Me.lblCost.TabIndex = 9
+        Me.lblCost.Text = "XXXXXXXXXXXX"
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,4 +182,5 @@ Partial Class frmScuba
     Friend WithEvents btnDiveCost As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents lblScubaDive As Label
+    Friend WithEvents lblCost As Label
 End Class
