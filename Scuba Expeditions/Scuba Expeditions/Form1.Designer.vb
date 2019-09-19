@@ -53,6 +53,7 @@ Partial Class frmScuba
         '
         Me.cboLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboLocation.FormattingEnabled = True
+        Me.cboLocation.Items.AddRange(New Object() {"Australia", "Belize", "Fiji"})
         Me.cboLocation.Location = New System.Drawing.Point(130, 72)
         Me.cboLocation.Name = "cboLocation"
         Me.cboLocation.Size = New System.Drawing.Size(159, 32)
