@@ -26,12 +26,14 @@ Partial Class frmScuba
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboLocation = New System.Windows.Forms.ComboBox()
         Me.lblTeam = New System.Windows.Forms.Label()
+        Me.txtTeam = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.txtTeam)
         Me.Panel1.Controls.Add(Me.lblTeam)
         Me.Panel1.Controls.Add(Me.cboLocation)
         Me.Panel1.Controls.Add(Me.lblTitle)
@@ -72,6 +74,14 @@ Partial Class frmScuba
         Me.lblTeam.TabIndex = 2
         Me.lblTeam.Text = "Number in Dive Team:"
         '
+        'txtTeam
+        '
+        Me.txtTeam.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTeam.Location = New System.Drawing.Point(316, 115)
+        Me.txtTeam.Name = "txtTeam"
+        Me.txtTeam.Size = New System.Drawing.Size(32, 31)
+        Me.txtTeam.TabIndex = 3
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -92,4 +102,5 @@ Partial Class frmScuba
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboLocation As ComboBox
     Friend WithEvents lblTeam As Label
+    Friend WithEvents txtTeam As TextBox
 End Class
