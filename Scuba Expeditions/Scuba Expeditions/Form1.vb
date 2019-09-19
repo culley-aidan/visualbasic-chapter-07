@@ -70,4 +70,7 @@ Public Class frmScuba
         lstDive.Items.Add(_strDive6)
     End Sub
 
+    Private Sub BtnDiveCost_Click(sender As Object, e As EventArgs) Handles btnDiveCost.Click
+
+    End Sub
 End Class
