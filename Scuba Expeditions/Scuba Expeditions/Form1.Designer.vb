@@ -22,7 +22,30 @@ Partial Class frmScuba
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lblTitle)
+        Me.Panel1.Location = New System.Drawing.Point(430, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(424, 451)
+        Me.Panel1.TabIndex = 0
+        '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Stencil", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.lblTitle.Location = New System.Drawing.Point(2, 17)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(417, 34)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "Oceanic Scuba Expeditions"
         '
         'frmScuba
         '
@@ -31,10 +54,15 @@ Partial Class frmScuba
         Me.BackgroundImage = Global.Scuba_Expeditions.My.Resources.Resources.scuba
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(854, 451)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "frmScuba"
         Me.Text = "Oceanic Scuba Expeditions"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblTitle As Label
 End Class
