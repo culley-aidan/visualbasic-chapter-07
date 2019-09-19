@@ -87,6 +87,7 @@ Partial Class frmScuba
         Me.lblTeam.Size = New System.Drawing.Size(225, 25)
         Me.lblTeam.TabIndex = 2
         Me.lblTeam.Text = "Number in Dive Team:"
+        Me.lblTeam.Visible = False
         '
         'txtTeam
         '
@@ -95,6 +96,7 @@ Partial Class frmScuba
         Me.txtTeam.Name = "txtTeam"
         Me.txtTeam.Size = New System.Drawing.Size(32, 31)
         Me.txtTeam.TabIndex = 3
+        Me.txtTeam.Visible = False
         '
         'lblSelect
         '
@@ -105,6 +107,7 @@ Partial Class frmScuba
         Me.lblSelect.Size = New System.Drawing.Size(194, 25)
         Me.lblSelect.TabIndex = 4
         Me.lblSelect.Text = "Select Scuba Dive:"
+        Me.lblSelect.Visible = False
         '
         'lstDive
         '
@@ -115,6 +118,7 @@ Partial Class frmScuba
         Me.lstDive.Name = "lstDive"
         Me.lstDive.Size = New System.Drawing.Size(176, 76)
         Me.lstDive.TabIndex = 5
+        Me.lstDive.Visible = False
         '
         'btnDiveCost
         '
@@ -126,6 +130,7 @@ Partial Class frmScuba
         Me.btnDiveCost.TabIndex = 6
         Me.btnDiveCost.Text = "Dive Cost"
         Me.btnDiveCost.UseVisualStyleBackColor = False
+        Me.btnDiveCost.Visible = False
         '
         'btnClear
         '
@@ -137,6 +142,7 @@ Partial Class frmScuba
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear Form"
         Me.btnClear.UseVisualStyleBackColor = False
+        Me.btnClear.Visible = False
         '
         'lblScubaDive
         '
@@ -147,6 +153,7 @@ Partial Class frmScuba
         Me.lblScubaDive.Size = New System.Drawing.Size(180, 25)
         Me.lblScubaDive.TabIndex = 8
         Me.lblScubaDive.Text = "XXXXXXXXXXXX"
+        Me.lblScubaDive.Visible = False
         '
         'lblCost
         '
@@ -157,6 +164,7 @@ Partial Class frmScuba
         Me.lblCost.Size = New System.Drawing.Size(180, 25)
         Me.lblCost.TabIndex = 9
         Me.lblCost.Text = "XXXXXXXXXXXX"
+        Me.lblCost.Visible = False
         '
         'lblLength
         '
@@ -167,13 +175,16 @@ Partial Class frmScuba
         Me.lblLength.Size = New System.Drawing.Size(180, 25)
         Me.lblLength.TabIndex = 10
         Me.lblLength.Text = "XXXXXXXXXXXX"
+        Me.lblLength.Visible = False
         '
         'frmScuba
         '
+        Me.AcceptButton = Me.btnDiveCost
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Scuba_Expeditions.My.Resources.Resources.scuba
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(854, 451)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frmScuba"
