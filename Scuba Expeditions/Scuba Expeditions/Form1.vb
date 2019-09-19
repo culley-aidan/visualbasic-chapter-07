@@ -197,6 +197,11 @@ Public Class frmScuba
 
     Private Function FijiDiveCost(ByVal intDive As Integer, ByVal intTeam As Integer, ByRef intTime As Integer) As Decimal
         ' This function calculates the cost of the dive team in Fiji 
+        Dim decTeamCost As Decimal
+        Dim decFinalCost As Decimal
+        Dim decFijiDive2 As Decimal = 280D
+        Dim decFijiDive3 As Decimal = 225D
+        Dim decFijiDive6 As Decimal = 200D
 
     End Function
 
