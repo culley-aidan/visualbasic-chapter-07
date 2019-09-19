@@ -240,5 +240,6 @@ Public Class frmScuba
 
     Private Sub FrmScuba_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Hold the splash screen for 5 seconds
+        Threading.Thread.Sleep(5000)
     End Sub
 End Class
