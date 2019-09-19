@@ -14,7 +14,7 @@ Public Class frmScuba
     Private _strDive2 As String = "Tiger Shark"
     Private _strDive3 As String = "Fathom Chasm"
     Private _strDive4 As String = "Great Blue Chasm"
-    Private _strDive5 As String = "Rainbow reef"
+    Private _strDive5 As String = "Rainbow Reef"
     Private _strDive6 As String = "Namena Sunken Ship"
 
     Private Sub CboLocation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboLocation.SelectedIndexChanged
@@ -159,7 +159,7 @@ Public Class frmScuba
         Dim decTeamCost As Decimal
         Dim decFinalCost As Decimal
         Dim decAustraliaDive1 As Decimal = 359D
-        Dim decAustraliaDive2 As Decimal = 280D
+        Dim decAustraliaDive2 As Decimal = 200D
         Dim decAustraliaDive3 As Decimal = 125D
 
         Select Case intDive
