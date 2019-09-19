@@ -28,9 +28,11 @@ Partial Class frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = Global.Scuba_Expeditions.My.Resources.Resources.scuba
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(854, 451)
         Me.Name = "frmScuba"
-        Me.Text = "Scuba Expeditions"
+        Me.Text = "Oceanic Scuba Expeditions"
         Me.ResumeLayout(False)
 
     End Sub
