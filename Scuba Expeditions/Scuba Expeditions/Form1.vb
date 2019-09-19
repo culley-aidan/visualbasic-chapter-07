@@ -29,6 +29,7 @@ Public Class frmScuba
             Case 1
                 BelizeTeam()
             Case 2
+                FijiTeam()
         End Select
 
         ' Make items visible in the window 
@@ -60,6 +61,13 @@ Public Class frmScuba
         ' This procedure fills in the possible dive types offered in Belize
         lstDive.Items.Add(_strDive4)
         lstDive.Items.Add(_strDive5)
+    End Sub
+
+    Private Sub FijiTeam()
+        ' This procedure fills in the possible dive types offered in Fiji
+        lstDive.Items.Add(_strDive2)
+        lstDive.Items.Add(_strDive3)
+        lstDive.Items.Add(_strDive6)
     End Sub
 
 End Class
