@@ -153,6 +153,13 @@ Public Class frmScuba
 
     Private Function AustraliaDiveCost(ByVal intDive As Integer, ByVal intTeam As Integer, ByRef intTime As Integer) As Decimal
         ' This function calculates the cost of the dive team in Australia
+        Dim decTeamCost As Decimal
+        Dim decFinalCost As Decimal
+        Dim decAustraliaDive1 As Decimal = 359D
+        Dim decAustraliaDive2 As Decimal = 280D
+        Dim decAustraliaDive3 As Decimal = 125D
+
+
     End Function
 
 End Class
