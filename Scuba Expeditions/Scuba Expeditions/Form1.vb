@@ -104,7 +104,12 @@ Public Class frmScuba
     End Sub
 
     Private Function ValidateNumberInTeam() As Boolean
+        ' This procedure validates the value entered for the dive team size
 
+        Dim intTeamSize As Integer
+        Dim blnValidityCheck As Boolean = False
+        Dim strNumberInTeamMessage As String = "Please enter the number of people in your dive team (2-6)"
+        Dim strMessageBoxTitle As String = "Error"
     End Function
 
 End Class
