@@ -83,5 +83,23 @@ Public Class frmScuba
         Dim intLength As Integer = 0
         Dim decTotalCost As Decimal
 
+        ' Call a function to ensure the number of people in the dive team is valid
+
+        ' Call a function to ensure a scuba dive was selected
+
+        ' if number of people and the dive trip are valid, calculate the cost
+        If (blnNumberInTeamIsValid And blnDiverIsSelected) Then
+            intTeamSize = Convert.ToInt32(txtTeam.Text)
+            intLocationChoice = cboLocation.SelectedIndex
+            Select Case intLocationChoice
+                Case 0
+                Case 1
+                Case 2
+            End Select
+            ' Display the cost of the scuba dive
+            lblScubaDive.Text = "Dive: " & strSelectedTeam
+            lblCost.Text = "Cost: " & decTotalCost.ToString("C")
+            lblLength.Text = "Length: " & intLength.ToString() & " hours"
+        End If
     End Sub
 End Class
