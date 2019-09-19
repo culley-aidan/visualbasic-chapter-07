@@ -30,12 +30,14 @@ Partial Class frmScuba
         Me.lblSelect = New System.Windows.Forms.Label()
         Me.lstDive = New System.Windows.Forms.ListBox()
         Me.btnDiveCost = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnDiveCost)
         Me.Panel1.Controls.Add(Me.lstDive)
         Me.Panel1.Controls.Add(Me.lblSelect)
@@ -119,6 +121,17 @@ Partial Class frmScuba
         Me.btnDiveCost.Text = "Dive Cost"
         Me.btnDiveCost.UseVisualStyleBackColor = False
         '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.MidnightBlue
+        Me.btnClear.ForeColor = System.Drawing.Color.White
+        Me.btnClear.Location = New System.Drawing.Point(233, 293)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear Form"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
         'frmScuba
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -143,4 +156,5 @@ Partial Class frmScuba
     Friend WithEvents lblSelect As Label
     Friend WithEvents lstDive As ListBox
     Friend WithEvents btnDiveCost As Button
+    Friend WithEvents btnClear As Button
 End Class
