@@ -102,4 +102,9 @@ Public Class frmScuba
             lblLength.Text = "Length: " & intLength.ToString() & " hours"
         End If
     End Sub
+
+    Private Function ValidateNumberInTeam() As Boolean
+
+    End Function
+
 End Class
