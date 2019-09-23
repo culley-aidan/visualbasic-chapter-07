@@ -28,6 +28,8 @@ Partial Class frmIMAX
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.IMAX_Theatre.My.Resources.Resources.imax
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Name = "frmIMAX"
         Me.Text = "IMAX Theatre"
