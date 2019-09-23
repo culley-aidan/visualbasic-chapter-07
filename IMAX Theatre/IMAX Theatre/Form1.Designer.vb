@@ -27,12 +27,14 @@ Partial Class frmIMAX
         Me.lblTickets = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCost = New System.Windows.Forms.Button()
+        Me.txtTickets = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.txtTickets)
         Me.Panel1.Controls.Add(Me.btnCost)
         Me.Panel1.Controls.Add(Me.cboShow)
         Me.Panel1.Controls.Add(Me.lblTickets)
@@ -81,12 +83,22 @@ Partial Class frmIMAX
         Me.btnCost.BackColor = System.Drawing.Color.SteelBlue
         Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCost.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCost.Location = New System.Drawing.Point(135, 270)
+        Me.btnCost.Location = New System.Drawing.Point(135, 243)
         Me.btnCost.Name = "btnCost"
         Me.btnCost.Size = New System.Drawing.Size(161, 51)
         Me.btnCost.TabIndex = 6
         Me.btnCost.Text = "Ticket Cost"
         Me.btnCost.UseVisualStyleBackColor = False
+        '
+        '
+        'txtTickets
+        '
+        Me.txtTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTickets.Location = New System.Drawing.Point(197, 193)
+        Me.txtTickets.Name = "txtTickets"
+        Me.txtTickets.Size = New System.Drawing.Size(33, 31)
+        Me.txtTickets.TabIndex = 8
+        Me.txtTickets.Text = "22"
         '
         'frmIMAX
         '
@@ -108,4 +120,5 @@ Partial Class frmIMAX
     Friend WithEvents lblTickets As Label
     Friend WithEvents cboShow As ComboBox
     Friend WithEvents btnCost As Button
+    Friend WithEvents txtTickets As TextBox
 End Class
