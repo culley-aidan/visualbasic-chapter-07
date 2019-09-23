@@ -43,6 +43,18 @@ Public Class frmIMAX
         End If
     End Sub
 
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        ' Clears the current thing
+        cboShow.Text = "Select Show:"
+        lblTickets.Visible = False
+        txtTickets.Visible = False
+        btnCost.Visible = False
+        btnClear.Visible = False
+        lblTotalCost.Text = ""
+        lblTotalCost.Visible = False
+        txtTickets.Clear()
+    End Sub
+
     Private Sub FrmIMAX_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' users feel validated when it has a slow loading time, i watched a video about it 
         Threading.Thread.Sleep(4000)
