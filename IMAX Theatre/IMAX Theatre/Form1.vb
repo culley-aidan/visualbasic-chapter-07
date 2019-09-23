@@ -42,4 +42,9 @@ Public Class frmIMAX
             MsgBox("Enter a valid number", , "Error")
         End If
     End Sub
+
+    Private Sub FrmIMAX_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' users feel validated when it has a slow loading time, i watched a video about it 
+        Threading.Thread.Sleep(4000)
+    End Sub
 End Class
