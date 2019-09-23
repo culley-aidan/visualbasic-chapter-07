@@ -47,6 +47,7 @@ Partial Class frmIMAX
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(433, 454)
         Me.Panel1.TabIndex = 3
+        Me.Panel1.Visible = False
         '
         'txtTickets
         '
@@ -55,6 +56,7 @@ Partial Class frmIMAX
         Me.txtTickets.Name = "txtTickets"
         Me.txtTickets.Size = New System.Drawing.Size(33, 31)
         Me.txtTickets.TabIndex = 8
+        Me.txtTickets.Visible = False
         '
         'btnClear
         '
@@ -67,6 +69,7 @@ Partial Class frmIMAX
         Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear Form"
         Me.btnClear.UseVisualStyleBackColor = False
+        Me.btnClear.Visible = False
         '
         'btnCost
         '
@@ -79,6 +82,7 @@ Partial Class frmIMAX
         Me.btnCost.TabIndex = 6
         Me.btnCost.Text = "Ticket Cost"
         Me.btnCost.UseVisualStyleBackColor = False
+        Me.btnCost.Visible = False
         '
         'cboShow
         '
@@ -101,6 +105,7 @@ Partial Class frmIMAX
         Me.lblTickets.Size = New System.Drawing.Size(192, 25)
         Me.lblTickets.TabIndex = 4
         Me.lblTickets.Text = "Number of Tickets:"
+        Me.lblTickets.Visible = False
         '
         'lblTitle
         '
@@ -125,6 +130,7 @@ Partial Class frmIMAX
         Me.lblTotalCost.Size = New System.Drawing.Size(221, 25)
         Me.lblTotalCost.TabIndex = 9
         Me.lblTotalCost.Text = "$XX.XX for the tickets"
+        Me.lblTotalCost.Visible = False
         '
         'frmIMAX
         '
