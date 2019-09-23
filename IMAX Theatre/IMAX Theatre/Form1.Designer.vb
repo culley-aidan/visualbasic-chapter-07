@@ -22,9 +22,23 @@ Partial Class frmIMAX
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblTickets = New System.Windows.Forms.Label()
         Me.cboShow = New System.Windows.Forms.ComboBox()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.cboShow)
+        Me.Panel1.Controls.Add(Me.lblTickets)
+        Me.Panel1.Controls.Add(Me.lblTitle)
+        Me.Panel1.Location = New System.Drawing.Point(421, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(433, 454)
+        Me.Panel1.TabIndex = 3
         '
         'lblTitle
         '
@@ -32,21 +46,32 @@ Partial Class frmIMAX
         Me.lblTitle.BackColor = System.Drawing.Color.SteelBlue
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.Transparent
-        Me.lblTitle.Location = New System.Drawing.Point(492, 31)
+        Me.lblTitle.Location = New System.Drawing.Point(69, 32)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(315, 33)
-        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "IMAX Theatre Tickets"
+        '
+        'lblTickets
+        '
+        Me.lblTickets.AutoSize = True
+        Me.lblTickets.BackColor = System.Drawing.Color.Transparent
+        Me.lblTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTickets.Location = New System.Drawing.Point(120, 149)
+        Me.lblTickets.Name = "lblTickets"
+        Me.lblTickets.Size = New System.Drawing.Size(192, 25)
+        Me.lblTickets.TabIndex = 4
+        Me.lblTickets.Text = "Number of Tickets:"
         '
         'cboShow
         '
         Me.cboShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboShow.FormattingEnabled = True
         Me.cboShow.Items.AddRange(New Object() {"Mantinee $16", "Evening $27"})
-        Me.cboShow.Location = New System.Drawing.Point(571, 85)
+        Me.cboShow.Location = New System.Drawing.Point(137, 93)
         Me.cboShow.Name = "cboShow"
         Me.cboShow.Size = New System.Drawing.Size(159, 32)
-        Me.cboShow.TabIndex = 1
+        Me.cboShow.TabIndex = 5
         Me.cboShow.Text = "Select Show:"
         '
         'frmIMAX
@@ -56,15 +81,16 @@ Partial Class frmIMAX
         Me.BackgroundImage = Global.IMAX_Theatre.My.Resources.Resources.imax
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(854, 451)
-        Me.Controls.Add(Me.cboShow)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "frmIMAX"
         Me.Text = "IMAX Theatre"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents lblTitle As Label
+    Friend WithEvents lblTickets As Label
     Friend WithEvents cboShow As ComboBox
 End Class
