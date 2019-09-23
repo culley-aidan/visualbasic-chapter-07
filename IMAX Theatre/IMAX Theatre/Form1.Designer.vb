@@ -23,8 +23,6 @@ Partial Class frmIMAX
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblTickets = New System.Windows.Forms.Label()
         Me.cboShow = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -32,6 +30,7 @@ Partial Class frmIMAX
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.btnCost)
         Me.Panel1.Controls.Add(Me.cboShow)
         Me.Panel1.Controls.Add(Me.lblTickets)
         Me.Panel1.Controls.Add(Me.lblTitle)
@@ -39,6 +38,28 @@ Partial Class frmIMAX
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(433, 454)
         Me.Panel1.TabIndex = 3
+        '
+        'cboShow
+        '
+        Me.cboShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboShow.FormattingEnabled = True
+        Me.cboShow.Items.AddRange(New Object() {"Mantinee $16", "Evening $27"})
+        Me.cboShow.Location = New System.Drawing.Point(137, 93)
+        Me.cboShow.Name = "cboShow"
+        Me.cboShow.Size = New System.Drawing.Size(159, 32)
+        Me.cboShow.TabIndex = 5
+        Me.cboShow.Text = "Select Show:"
+        '
+        'lblTickets
+        '
+        Me.lblTickets.AutoSize = True
+        Me.lblTickets.BackColor = System.Drawing.Color.Transparent
+        Me.lblTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTickets.Location = New System.Drawing.Point(120, 149)
+        Me.lblTickets.Name = "lblTickets"
+        Me.lblTickets.Size = New System.Drawing.Size(192, 25)
+        Me.lblTickets.TabIndex = 4
+        Me.lblTickets.Text = "Number of Tickets:"
         '
         'lblTitle
         '
@@ -52,27 +73,17 @@ Partial Class frmIMAX
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "IMAX Theatre Tickets"
         '
-        'lblTickets
+        'btnCost
         '
-        Me.lblTickets.AutoSize = True
-        Me.lblTickets.BackColor = System.Drawing.Color.Transparent
-        Me.lblTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTickets.Location = New System.Drawing.Point(120, 149)
-        Me.lblTickets.Name = "lblTickets"
-        Me.lblTickets.Size = New System.Drawing.Size(192, 25)
-        Me.lblTickets.TabIndex = 4
-        Me.lblTickets.Text = "Number of Tickets:"
-        '
-        'cboShow
-        '
-        Me.cboShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboShow.FormattingEnabled = True
-        Me.cboShow.Items.AddRange(New Object() {"Mantinee $16", "Evening $27"})
-        Me.cboShow.Location = New System.Drawing.Point(137, 93)
-        Me.cboShow.Name = "cboShow"
-        Me.cboShow.Size = New System.Drawing.Size(159, 32)
-        Me.cboShow.TabIndex = 5
-        Me.cboShow.Text = "Select Show:"
+        Me.btnCost.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCost.ForeColor = System.Drawing.Color.Transparent
+        Me.btnCost.Location = New System.Drawing.Point(135, 270)
+        Me.btnCost.Name = "btnCost"
+        Me.btnCost.Size = New System.Drawing.Size(161, 51)
+        Me.btnCost.TabIndex = 6
+        Me.btnCost.Text = "Ticket Cost"
+        Me.btnCost.UseVisualStyleBackColor = False
         '
         'frmIMAX
         '
@@ -93,4 +104,5 @@ Partial Class frmIMAX
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblTickets As Label
     Friend WithEvents cboShow As ComboBox
+    Friend WithEvents btnCost As Button
 End Class
