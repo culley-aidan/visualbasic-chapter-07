@@ -27,6 +27,7 @@ Partial Class frmIMAX
         Me.lblTickets = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCost = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.txtTickets = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -35,6 +36,7 @@ Partial Class frmIMAX
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.txtTickets)
+        Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnCost)
         Me.Panel1.Controls.Add(Me.cboShow)
         Me.Panel1.Controls.Add(Me.lblTickets)
@@ -90,6 +92,17 @@ Partial Class frmIMAX
         Me.btnCost.Text = "Ticket Cost"
         Me.btnCost.UseVisualStyleBackColor = False
         '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.Transparent
+        Me.btnClear.Location = New System.Drawing.Point(135, 300)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(161, 51)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear Form"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'txtTickets
         '
@@ -120,5 +133,6 @@ Partial Class frmIMAX
     Friend WithEvents lblTickets As Label
     Friend WithEvents cboShow As ComboBox
     Friend WithEvents btnCost As Button
+    Friend WithEvents btnClear As Button
     Friend WithEvents txtTickets As TextBox
 End Class
