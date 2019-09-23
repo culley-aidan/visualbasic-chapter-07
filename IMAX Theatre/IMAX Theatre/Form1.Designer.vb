@@ -23,18 +23,20 @@ Partial Class frmIMAX
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtTickets = New System.Windows.Forms.TextBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnCost = New System.Windows.Forms.Button()
         Me.cboShow = New System.Windows.Forms.ComboBox()
         Me.lblTickets = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.btnCost = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.txtTickets = New System.Windows.Forms.TextBox()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.lblTotalCost)
         Me.Panel1.Controls.Add(Me.txtTickets)
         Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnCost)
@@ -45,6 +47,38 @@ Partial Class frmIMAX
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(433, 454)
         Me.Panel1.TabIndex = 3
+        '
+        'txtTickets
+        '
+        Me.txtTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTickets.Location = New System.Drawing.Point(197, 193)
+        Me.txtTickets.Name = "txtTickets"
+        Me.txtTickets.Size = New System.Drawing.Size(33, 31)
+        Me.txtTickets.TabIndex = 8
+        '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.Transparent
+        Me.btnClear.Location = New System.Drawing.Point(135, 300)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(161, 51)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear Form"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'btnCost
+        '
+        Me.btnCost.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCost.ForeColor = System.Drawing.Color.Transparent
+        Me.btnCost.Location = New System.Drawing.Point(135, 243)
+        Me.btnCost.Name = "btnCost"
+        Me.btnCost.Size = New System.Drawing.Size(161, 51)
+        Me.btnCost.TabIndex = 6
+        Me.btnCost.Text = "Ticket Cost"
+        Me.btnCost.UseVisualStyleBackColor = False
         '
         'cboShow
         '
@@ -72,46 +106,25 @@ Partial Class frmIMAX
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.BackColor = System.Drawing.Color.SteelBlue
-        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.ForeColor = System.Drawing.Color.Transparent
-        Me.lblTitle.Location = New System.Drawing.Point(69, 32)
+        Me.lblTitle.Location = New System.Drawing.Point(45, 30)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(315, 33)
+        Me.lblTitle.Size = New System.Drawing.Size(343, 37)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "IMAX Theatre Tickets"
         '
-        'btnCost
+        'lblTotalCost
         '
-        Me.btnCost.BackColor = System.Drawing.Color.SteelBlue
-        Me.btnCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCost.ForeColor = System.Drawing.Color.Transparent
-        Me.btnCost.Location = New System.Drawing.Point(135, 243)
-        Me.btnCost.Name = "btnCost"
-        Me.btnCost.Size = New System.Drawing.Size(161, 51)
-        Me.btnCost.TabIndex = 6
-        Me.btnCost.Text = "Ticket Cost"
-        Me.btnCost.UseVisualStyleBackColor = False
-        '
-        'btnClear
-        '
-        Me.btnClear.BackColor = System.Drawing.Color.SteelBlue
-        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.ForeColor = System.Drawing.Color.Transparent
-        Me.btnClear.Location = New System.Drawing.Point(135, 300)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(161, 51)
-        Me.btnClear.TabIndex = 7
-        Me.btnClear.Text = "Clear Form"
-        Me.btnClear.UseVisualStyleBackColor = False
-        '
-        'txtTickets
-        '
-        Me.txtTickets.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTickets.Location = New System.Drawing.Point(197, 193)
-        Me.txtTickets.Name = "txtTickets"
-        Me.txtTickets.Size = New System.Drawing.Size(33, 31)
-        Me.txtTickets.TabIndex = 8
-        Me.txtTickets.Text = "22"
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.BackColor = System.Drawing.Color.SteelBlue
+        Me.lblTotalCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.ForeColor = System.Drawing.Color.Transparent
+        Me.lblTotalCost.Location = New System.Drawing.Point(75, 374)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(221, 25)
+        Me.lblTotalCost.TabIndex = 9
+        Me.lblTotalCost.Text = "$XX.XX for the tickets"
         '
         'frmIMAX
         '
@@ -135,4 +148,5 @@ Partial Class frmIMAX
     Friend WithEvents btnCost As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents txtTickets As TextBox
+    Friend WithEvents lblTotalCost As Label
 End Class
