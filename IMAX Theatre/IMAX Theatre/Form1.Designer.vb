@@ -24,6 +24,9 @@ Partial Class frmIMAX
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.cboShow = New System.Windows.Forms.ComboBox()
+        Me.lblTickets = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnCost = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
