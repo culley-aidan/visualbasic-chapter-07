@@ -221,7 +221,7 @@ Public Class frmScuba
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ' This event handler clears the form and resets the form for reuse when the user clicks the Clear button.
-        cboLocation.Text = "Select Location"
+        cboLocation.Text = "Select Location:"
         txtTeam.Clear()
         lstDive.Items.Clear()
         lblScubaDive.Text = ""
