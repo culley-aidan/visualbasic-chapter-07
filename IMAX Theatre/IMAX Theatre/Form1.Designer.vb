@@ -23,13 +23,13 @@ Partial Class frmIMAX
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.txtTickets = New System.Windows.Forms.TextBox()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnCost = New System.Windows.Forms.Button()
         Me.cboShow = New System.Windows.Forms.ComboBox()
         Me.lblTickets = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,7 +47,19 @@ Partial Class frmIMAX
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(433, 454)
         Me.Panel1.TabIndex = 3
-        Me.Panel1.Visible = False
+        '
+        'lblTotalCost
+        '
+        Me.lblTotalCost.AutoSize = True
+        Me.lblTotalCost.BackColor = System.Drawing.Color.SteelBlue
+        Me.lblTotalCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalCost.ForeColor = System.Drawing.Color.Transparent
+        Me.lblTotalCost.Location = New System.Drawing.Point(75, 374)
+        Me.lblTotalCost.Name = "lblTotalCost"
+        Me.lblTotalCost.Size = New System.Drawing.Size(221, 25)
+        Me.lblTotalCost.TabIndex = 9
+        Me.lblTotalCost.Text = "$XX.XX for the tickets"
+        Me.lblTotalCost.Visible = False
         '
         'txtTickets
         '
@@ -118,19 +130,6 @@ Partial Class frmIMAX
         Me.lblTitle.Size = New System.Drawing.Size(343, 37)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "IMAX Theatre Tickets"
-        '
-        'lblTotalCost
-        '
-        Me.lblTotalCost.AutoSize = True
-        Me.lblTotalCost.BackColor = System.Drawing.Color.SteelBlue
-        Me.lblTotalCost.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalCost.ForeColor = System.Drawing.Color.Transparent
-        Me.lblTotalCost.Location = New System.Drawing.Point(75, 374)
-        Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(221, 25)
-        Me.lblTotalCost.TabIndex = 9
-        Me.lblTotalCost.Text = "$XX.XX for the tickets"
-        Me.lblTotalCost.Visible = False
         '
         'frmIMAX
         '
