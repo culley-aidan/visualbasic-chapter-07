@@ -30,6 +30,8 @@ Partial Class frmBMICalc
         Me.lblWeight = New System.Windows.Forms.Label()
         Me.cboUnits = New System.Windows.Forms.ComboBox()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -46,6 +48,8 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.btnClear)
+        Me.Panel1.Controls.Add(Me.btnCalculate)
         Me.Panel1.Controls.Add(Me.txtHeight)
         Me.Panel1.Controls.Add(Me.txtWeight)
         Me.Panel1.Controls.Add(Me.lblHeight)
@@ -114,6 +118,24 @@ Partial Class frmBMICalc
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Body Mass Index Calculator"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Location = New System.Drawing.Point(124, 241)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(142, 47)
+        Me.btnCalculate.TabIndex = 6
+        Me.btnCalculate.Text = "Calculate BMI "
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(124, 295)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(142, 47)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear Form"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'frmBMICalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -141,4 +163,6 @@ Partial Class frmBMICalc
     Friend WithEvents lblHeight As Label
     Friend WithEvents txtWeight As TextBox
     Friend WithEvents txtHeight As TextBox
+    Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnClear As Button
 End Class
