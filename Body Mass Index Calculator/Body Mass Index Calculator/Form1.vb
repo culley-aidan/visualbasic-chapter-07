@@ -3,6 +3,7 @@
 ' Date:         September 19th, 2019
 ' Purpose:      Calculates BMI
 
+Option Strict On
 Public Class frmBMICalc
     Private Sub CboUnits_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboUnits.SelectedIndexChanged
 
