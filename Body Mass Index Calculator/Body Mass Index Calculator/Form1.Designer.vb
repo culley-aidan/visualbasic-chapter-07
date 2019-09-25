@@ -27,6 +27,7 @@ Partial Class frmBMICalc
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboUnits = New System.Windows.Forms.ComboBox()
         Me.lblWeight = New System.Windows.Forms.Label()
+        Me.lblHeight = New System.Windows.Forms.Label()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,6 +44,7 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.lblHeight)
         Me.Panel1.Controls.Add(Me.lblWeight)
         Me.Panel1.Controls.Add(Me.cboUnits)
         Me.Panel1.Controls.Add(Me.lblTitle)
@@ -81,6 +83,17 @@ Partial Class frmBMICalc
         Me.lblWeight.Size = New System.Drawing.Size(133, 25)
         Me.lblWeight.TabIndex = 2
         Me.lblWeight.Text = "Weight (xx): "
+        '
+        'lblHeight
+        '
+        Me.lblHeight.AutoSize = True
+        Me.lblHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeight.Location = New System.Drawing.Point(60, 160)
+        Me.lblHeight.Name = "lblHeight"
+        Me.lblHeight.Size = New System.Drawing.Size(122, 25)
+        Me.lblHeight.TabIndex = 3
+        Me.lblHeight.Text = "Height (xx):"
+        '
         'frmBMICalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -105,4 +118,5 @@ Partial Class frmBMICalc
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboUnits As ComboBox
     Friend WithEvents lblWeight As Label
+    Friend WithEvents lblHeight As Label
 End Class
