@@ -71,9 +71,9 @@ Partial Class frmBMICalc
         Me.lblWeightStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWeightStatus.Location = New System.Drawing.Point(14, 399)
         Me.lblWeightStatus.Name = "lblWeightStatus"
-        Me.lblWeightStatus.Size = New System.Drawing.Size(363, 24)
+        Me.lblWeightStatus.Size = New System.Drawing.Size(190, 24)
         Me.lblWeightStatus.TabIndex = 9
-        Me.lblWeightStatus.Text = "Your weight status is: XXXXXX XXXXXX"
+        Me.lblWeightStatus.Text = "Your weight status is: "
         Me.lblWeightStatus.Visible = False
         '
         'lblBMI
@@ -82,9 +82,9 @@ Partial Class frmBMICalc
         Me.lblBMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBMI.Location = New System.Drawing.Point(114, 361)
         Me.lblBMI.Name = "lblBMI"
-        Me.lblBMI.Size = New System.Drawing.Size(162, 24)
+        Me.lblBMI.Size = New System.Drawing.Size(115, 24)
         Me.lblBMI.TabIndex = 8
-        Me.lblBMI.Text = "Your BMI is: XX.X"
+        Me.lblBMI.Text = "Your BMI is: "
         Me.lblBMI.Visible = False
         '
         'btnClear
@@ -131,9 +131,9 @@ Partial Class frmBMICalc
         Me.lblHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeight.Location = New System.Drawing.Point(102, 166)
         Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(122, 25)
+        Me.lblHeight.Size = New System.Drawing.Size(80, 25)
         Me.lblHeight.TabIndex = 3
-        Me.lblHeight.Text = "Height (xx):"
+        Me.lblHeight.Text = "Height "
         Me.lblHeight.Visible = False
         '
         'lblWeight
@@ -142,9 +142,9 @@ Partial Class frmBMICalc
         Me.lblWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWeight.Location = New System.Drawing.Point(97, 124)
         Me.lblWeight.Name = "lblWeight"
-        Me.lblWeight.Size = New System.Drawing.Size(133, 25)
+        Me.lblWeight.Size = New System.Drawing.Size(85, 25)
         Me.lblWeight.TabIndex = 2
-        Me.lblWeight.Text = "Weight (xx): "
+        Me.lblWeight.Text = "Weight "
         Me.lblWeight.Visible = False
         '
         'cboUnits
