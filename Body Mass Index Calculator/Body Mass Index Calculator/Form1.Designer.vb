@@ -26,6 +26,7 @@ Partial Class frmBMICalc
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboUnits = New System.Windows.Forms.ComboBox()
+        Me.lblWeight = New System.Windows.Forms.Label()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -42,6 +43,7 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.lblWeight)
         Me.Panel1.Controls.Add(Me.cboUnits)
         Me.Panel1.Controls.Add(Me.lblTitle)
         Me.Panel1.Location = New System.Drawing.Point(410, 0)
@@ -70,6 +72,15 @@ Partial Class frmBMICalc
         Me.cboUnits.TabIndex = 1
         Me.cboUnits.Text = "Measurement System:"
         '
+        'lblWeight
+        '
+        Me.lblWeight.AutoSize = True
+        Me.lblWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeight.Location = New System.Drawing.Point(60, 124)
+        Me.lblWeight.Name = "lblWeight"
+        Me.lblWeight.Size = New System.Drawing.Size(133, 25)
+        Me.lblWeight.TabIndex = 2
+        Me.lblWeight.Text = "Weight (xx): "
         'frmBMICalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -93,4 +104,5 @@ Partial Class frmBMICalc
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboUnits As ComboBox
+    Friend WithEvents lblWeight As Label
 End Class
