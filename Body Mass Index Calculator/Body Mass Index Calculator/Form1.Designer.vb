@@ -63,7 +63,7 @@ Partial Class frmBMICalc
         '
         Me.cboUnits.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboUnits.FormattingEnabled = True
-        Me.cboUnits.Items.AddRange(New Object() {"Metric", "Imperial"})
+        Me.cboUnits.Items.AddRange(New Object() {"Metric System (m,kg)", "Imperial System (in, lb)"})
         Me.cboUnits.Location = New System.Drawing.Point(88, 62)
         Me.cboUnits.Name = "cboUnits"
         Me.cboUnits.Size = New System.Drawing.Size(211, 32)
