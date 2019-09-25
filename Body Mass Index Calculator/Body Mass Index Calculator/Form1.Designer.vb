@@ -24,16 +24,16 @@ Partial Class frmBMICalc
     Private Sub InitializeComponent()
         Me.picBackground = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblWeightStatus = New System.Windows.Forms.Label()
+        Me.lblBMI = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.txtHeight = New System.Windows.Forms.TextBox()
         Me.txtWeight = New System.Windows.Forms.TextBox()
         Me.lblHeight = New System.Windows.Forms.Label()
         Me.lblWeight = New System.Windows.Forms.Label()
         Me.cboUnits = New System.Windows.Forms.ComboBox()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.lblBMI = New System.Windows.Forms.Label()
-        Me.lblWeightStatus = New System.Windows.Forms.Label()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -65,6 +65,48 @@ Partial Class frmBMICalc
         Me.Panel1.Size = New System.Drawing.Size(390, 450)
         Me.Panel1.TabIndex = 1
         '
+        'lblWeightStatus
+        '
+        Me.lblWeightStatus.AutoSize = True
+        Me.lblWeightStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeightStatus.Location = New System.Drawing.Point(14, 399)
+        Me.lblWeightStatus.Name = "lblWeightStatus"
+        Me.lblWeightStatus.Size = New System.Drawing.Size(363, 24)
+        Me.lblWeightStatus.TabIndex = 9
+        Me.lblWeightStatus.Text = "Your weight status is: XXXXXX XXXXXX"
+        Me.lblWeightStatus.Visible = False
+        '
+        'lblBMI
+        '
+        Me.lblBMI.AutoSize = True
+        Me.lblBMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBMI.Location = New System.Drawing.Point(114, 361)
+        Me.lblBMI.Name = "lblBMI"
+        Me.lblBMI.Size = New System.Drawing.Size(162, 24)
+        Me.lblBMI.TabIndex = 8
+        Me.lblBMI.Text = "Your BMI is: XX.X"
+        Me.lblBMI.Visible = False
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(124, 295)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(142, 47)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Clear Form"
+        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.Visible = False
+        '
+        'btnCalculate
+        '
+        Me.btnCalculate.Location = New System.Drawing.Point(124, 241)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(142, 47)
+        Me.btnCalculate.TabIndex = 6
+        Me.btnCalculate.Text = "Calculate BMI "
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCalculate.Visible = False
+        '
         'txtHeight
         '
         Me.txtHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -72,6 +114,7 @@ Partial Class frmBMICalc
         Me.txtHeight.Name = "txtHeight"
         Me.txtHeight.Size = New System.Drawing.Size(58, 31)
         Me.txtHeight.TabIndex = 5
+        Me.txtHeight.Visible = False
         '
         'txtWeight
         '
@@ -80,6 +123,7 @@ Partial Class frmBMICalc
         Me.txtWeight.Name = "txtWeight"
         Me.txtWeight.Size = New System.Drawing.Size(58, 31)
         Me.txtWeight.TabIndex = 4
+        Me.txtWeight.Visible = False
         '
         'lblHeight
         '
@@ -90,6 +134,7 @@ Partial Class frmBMICalc
         Me.lblHeight.Size = New System.Drawing.Size(122, 25)
         Me.lblHeight.TabIndex = 3
         Me.lblHeight.Text = "Height (xx):"
+        Me.lblHeight.Visible = False
         '
         'lblWeight
         '
@@ -100,6 +145,7 @@ Partial Class frmBMICalc
         Me.lblWeight.Size = New System.Drawing.Size(133, 25)
         Me.lblWeight.TabIndex = 2
         Me.lblWeight.Text = "Weight (xx): "
+        Me.lblWeight.Visible = False
         '
         'cboUnits
         '
@@ -121,44 +167,6 @@ Partial Class frmBMICalc
         Me.lblTitle.Size = New System.Drawing.Size(378, 33)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Body Mass Index Calculator"
-        '
-        'btnCalculate
-        '
-        Me.btnCalculate.Location = New System.Drawing.Point(124, 241)
-        Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(142, 47)
-        Me.btnCalculate.TabIndex = 6
-        Me.btnCalculate.Text = "Calculate BMI "
-        Me.btnCalculate.UseVisualStyleBackColor = True
-        '
-        'btnClear
-        '
-        Me.btnClear.Location = New System.Drawing.Point(124, 295)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(142, 47)
-        Me.btnClear.TabIndex = 7
-        Me.btnClear.Text = "Clear Form"
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'lblBMI
-        '
-        Me.lblBMI.AutoSize = True
-        Me.lblBMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBMI.Location = New System.Drawing.Point(114, 361)
-        Me.lblBMI.Name = "lblBMI"
-        Me.lblBMI.Size = New System.Drawing.Size(162, 24)
-        Me.lblBMI.TabIndex = 8
-        Me.lblBMI.Text = "Your BMI is: XX.X"
-        '
-        'lblWeightStatus
-        '
-        Me.lblWeightStatus.AutoSize = True
-        Me.lblWeightStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWeightStatus.Location = New System.Drawing.Point(14, 399)
-        Me.lblWeightStatus.Name = "lblWeightStatus"
-        Me.lblWeightStatus.Size = New System.Drawing.Size(363, 24)
-        Me.lblWeightStatus.TabIndex = 9
-        Me.lblWeightStatus.Text = "Your weight status is: XXXXXX XXXXXX"
         '
         'frmBMICalc
         '
