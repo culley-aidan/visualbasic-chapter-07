@@ -24,10 +24,12 @@ Partial Class frmBMICalc
     Private Sub InitializeComponent()
         Me.picBackground = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.cboUnits = New System.Windows.Forms.ComboBox()
-        Me.lblWeight = New System.Windows.Forms.Label()
+        Me.txtHeight = New System.Windows.Forms.TextBox()
+        Me.txtWeight = New System.Windows.Forms.TextBox()
         Me.lblHeight = New System.Windows.Forms.Label()
+        Me.lblWeight = New System.Windows.Forms.Label()
+        Me.cboUnits = New System.Windows.Forms.ComboBox()
+        Me.lblTitle = New System.Windows.Forms.Label()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -44,6 +46,8 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.txtHeight)
+        Me.Panel1.Controls.Add(Me.txtWeight)
         Me.Panel1.Controls.Add(Me.lblHeight)
         Me.Panel1.Controls.Add(Me.lblWeight)
         Me.Panel1.Controls.Add(Me.cboUnits)
@@ -53,15 +57,41 @@ Partial Class frmBMICalc
         Me.Panel1.Size = New System.Drawing.Size(390, 450)
         Me.Panel1.TabIndex = 1
         '
-        'lblTitle
+        'txtHeight
         '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(8, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(378, 33)
-        Me.lblTitle.TabIndex = 0
-        Me.lblTitle.Text = "Body Mass Index Calculator"
+        Me.txtHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtHeight.Location = New System.Drawing.Point(236, 163)
+        Me.txtHeight.Name = "txtHeight"
+        Me.txtHeight.Size = New System.Drawing.Size(58, 31)
+        Me.txtHeight.TabIndex = 5
+        '
+        'txtWeight
+        '
+        Me.txtWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtWeight.Location = New System.Drawing.Point(236, 121)
+        Me.txtWeight.Name = "txtWeight"
+        Me.txtWeight.Size = New System.Drawing.Size(58, 31)
+        Me.txtWeight.TabIndex = 4
+        '
+        'lblHeight
+        '
+        Me.lblHeight.AutoSize = True
+        Me.lblHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeight.Location = New System.Drawing.Point(102, 166)
+        Me.lblHeight.Name = "lblHeight"
+        Me.lblHeight.Size = New System.Drawing.Size(122, 25)
+        Me.lblHeight.TabIndex = 3
+        Me.lblHeight.Text = "Height (xx):"
+        '
+        'lblWeight
+        '
+        Me.lblWeight.AutoSize = True
+        Me.lblWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeight.Location = New System.Drawing.Point(97, 124)
+        Me.lblWeight.Name = "lblWeight"
+        Me.lblWeight.Size = New System.Drawing.Size(133, 25)
+        Me.lblWeight.TabIndex = 2
+        Me.lblWeight.Text = "Weight (xx): "
         '
         'cboUnits
         '
@@ -74,25 +104,15 @@ Partial Class frmBMICalc
         Me.cboUnits.TabIndex = 1
         Me.cboUnits.Text = "Measurement System:"
         '
-        'lblWeight
+        'lblTitle
         '
-        Me.lblWeight.AutoSize = True
-        Me.lblWeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWeight.Location = New System.Drawing.Point(60, 124)
-        Me.lblWeight.Name = "lblWeight"
-        Me.lblWeight.Size = New System.Drawing.Size(133, 25)
-        Me.lblWeight.TabIndex = 2
-        Me.lblWeight.Text = "Weight (xx): "
-        '
-        'lblHeight
-        '
-        Me.lblHeight.AutoSize = True
-        Me.lblHeight.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeight.Location = New System.Drawing.Point(60, 160)
-        Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(122, 25)
-        Me.lblHeight.TabIndex = 3
-        Me.lblHeight.Text = "Height (xx):"
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(8, 9)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(378, 33)
+        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.Text = "Body Mass Index Calculator"
         '
         'frmBMICalc
         '
@@ -119,4 +139,6 @@ Partial Class frmBMICalc
     Friend WithEvents cboUnits As ComboBox
     Friend WithEvents lblWeight As Label
     Friend WithEvents lblHeight As Label
+    Friend WithEvents txtWeight As TextBox
+    Friend WithEvents txtHeight As TextBox
 End Class
