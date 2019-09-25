@@ -32,6 +32,8 @@ Partial Class frmBMICalc
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
+        Me.lblBMI = New System.Windows.Forms.Label()
+        Me.lblWeightStatus = New System.Windows.Forms.Label()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,6 +50,8 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.lblWeightStatus)
+        Me.Panel1.Controls.Add(Me.lblBMI)
         Me.Panel1.Controls.Add(Me.btnClear)
         Me.Panel1.Controls.Add(Me.btnCalculate)
         Me.Panel1.Controls.Add(Me.txtHeight)
@@ -136,6 +140,26 @@ Partial Class frmBMICalc
         Me.btnClear.Text = "Clear Form"
         Me.btnClear.UseVisualStyleBackColor = True
         '
+        'lblBMI
+        '
+        Me.lblBMI.AutoSize = True
+        Me.lblBMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBMI.Location = New System.Drawing.Point(114, 361)
+        Me.lblBMI.Name = "lblBMI"
+        Me.lblBMI.Size = New System.Drawing.Size(162, 24)
+        Me.lblBMI.TabIndex = 8
+        Me.lblBMI.Text = "Your BMI is: XX.X"
+        '
+        'lblWeightStatus
+        '
+        Me.lblWeightStatus.AutoSize = True
+        Me.lblWeightStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeightStatus.Location = New System.Drawing.Point(14, 399)
+        Me.lblWeightStatus.Name = "lblWeightStatus"
+        Me.lblWeightStatus.Size = New System.Drawing.Size(363, 24)
+        Me.lblWeightStatus.TabIndex = 9
+        Me.lblWeightStatus.Text = "Your weight status is: XXXXXX XXXXXX"
+        '
         'frmBMICalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -165,4 +189,6 @@ Partial Class frmBMICalc
     Friend WithEvents txtHeight As TextBox
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents lblBMI As Label
+    Friend WithEvents lblWeightStatus As Label
 End Class
