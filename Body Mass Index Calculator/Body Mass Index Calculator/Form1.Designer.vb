@@ -25,6 +25,7 @@ Partial Class frmBMICalc
         Me.picBackground = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.cboUnits = New System.Windows.Forms.ComboBox()
         CType(Me.picBackground, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -41,6 +42,7 @@ Partial Class frmBMICalc
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.cboUnits)
         Me.Panel1.Controls.Add(Me.lblTitle)
         Me.Panel1.Location = New System.Drawing.Point(410, 0)
         Me.Panel1.Name = "Panel1"
@@ -56,6 +58,17 @@ Partial Class frmBMICalc
         Me.lblTitle.Size = New System.Drawing.Size(378, 33)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Body Mass Index Calculator"
+        '
+        'cboUnits
+        '
+        Me.cboUnits.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboUnits.FormattingEnabled = True
+        Me.cboUnits.Items.AddRange(New Object() {"Metric", "Imperial"})
+        Me.cboUnits.Location = New System.Drawing.Point(88, 62)
+        Me.cboUnits.Name = "cboUnits"
+        Me.cboUnits.Size = New System.Drawing.Size(211, 32)
+        Me.cboUnits.TabIndex = 1
+        Me.cboUnits.Text = "Measurement System:"
         '
         'frmBMICalc
         '
@@ -79,4 +92,5 @@ Partial Class frmBMICalc
     Friend WithEvents picBackground As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lblTitle As Label
+    Friend WithEvents cboUnits As ComboBox
 End Class
