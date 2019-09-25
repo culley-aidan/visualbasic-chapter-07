@@ -27,8 +27,8 @@ Public Class frmIMAX
         Dim intRate As Integer
         Dim intTotalCost As Integer
 
-        If IsNumeric(txtTickets.Text) Then
-            intTotalTickets = Convert.ToInt32(txtTickets.Text)
+        ' *.TryPrase is superior to IsNumeric and try catch!!!! WHY LET THE ACCIDENT HAPPEN AND THEN CLEAN IT UP WHEN YOU CAN PREVENT IT?!
+        If Integer.TryParse(txtTickets.Text, intTotalTickets) Then
             Select Case intShowChoice
                 Case 0
                     intRate = intMatineeCost
