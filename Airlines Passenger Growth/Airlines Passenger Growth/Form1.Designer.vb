@@ -23,23 +23,35 @@ Partial Class frmGrowth
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(165, 9)
+        Me.lblTitle.Location = New System.Drawing.Point(12, 9)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(435, 39)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Airlines' Passenger Growth"
+        '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.Location = New System.Drawing.Point(12, 308)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(231, 48)
+        Me.btnCalculate.TabIndex = 1
+        Me.btnCalculate.Text = "Predict the next 10 years"
+        Me.btnCalculate.UseVisualStyleBackColor = True
         '
         'frmGrowth
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "frmGrowth"
         Me.Text = "Airline Passenger Growth"
@@ -49,4 +61,5 @@ Partial Class frmGrowth
     End Sub
 
     Friend WithEvents lblTitle As Label
+    Friend WithEvents btnCalculate As Button
 End Class
