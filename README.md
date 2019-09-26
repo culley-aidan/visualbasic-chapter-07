@@ -5,4 +5,4 @@ Visual Basic Programming 1, Chapter 7
 - [X] Guided Program – Scuba Expedition
 - [X] 1 – IMAX Theatre
 - [X] 3 – Body Mass Index (BMI)
-- [ ] 6 - Airlines Passenger Growth
+- [X] 6 - Airlines Passenger Growth
