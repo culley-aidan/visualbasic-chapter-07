@@ -25,13 +25,14 @@ Partial Class frmGrowth
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.btnSpecificCalculate = New System.Windows.Forms.Button()
+        Me.lstGrowth = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(12, 9)
+        Me.lblTitle.Location = New System.Drawing.Point(46, 9)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(435, 39)
         Me.lblTitle.TabIndex = 0
@@ -40,28 +41,39 @@ Partial Class frmGrowth
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(12, 308)
+        Me.btnCalculate.Location = New System.Drawing.Point(46, 308)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(231, 48)
+        Me.btnCalculate.Size = New System.Drawing.Size(162, 61)
         Me.btnCalculate.TabIndex = 1
-        Me.btnCalculate.Text = "Predict the next 10 years"
+        Me.btnCalculate.Text = "Predict the next ten years"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
         'btnSpecificCalculate
         '
         Me.btnSpecificCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSpecificCalculate.Location = New System.Drawing.Point(12, 380)
+        Me.btnSpecificCalculate.Location = New System.Drawing.Point(319, 308)
         Me.btnSpecificCalculate.Name = "btnSpecificCalculate"
-        Me.btnSpecificCalculate.Size = New System.Drawing.Size(231, 48)
+        Me.btnSpecificCalculate.Size = New System.Drawing.Size(162, 61)
         Me.btnSpecificCalculate.TabIndex = 2
         Me.btnSpecificCalculate.Text = "Predict a certain year"
         Me.btnSpecificCalculate.UseVisualStyleBackColor = True
+        '
+        'lstGrowth
+        '
+        Me.lstGrowth.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstGrowth.FormattingEnabled = True
+        Me.lstGrowth.ItemHeight = 24
+        Me.lstGrowth.Location = New System.Drawing.Point(46, 58)
+        Me.lstGrowth.Name = "lstGrowth"
+        Me.lstGrowth.Size = New System.Drawing.Size(435, 244)
+        Me.lstGrowth.TabIndex = 3
         '
         'frmGrowth
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(527, 450)
+        Me.Controls.Add(Me.lstGrowth)
         Me.Controls.Add(Me.btnSpecificCalculate)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
@@ -75,4 +87,5 @@ Partial Class frmGrowth
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents btnSpecificCalculate As Button
+    Friend WithEvents lstGrowth As ListBox
 End Class
