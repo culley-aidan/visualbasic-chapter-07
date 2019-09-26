@@ -24,6 +24,7 @@ Partial Class frmGrowth
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.btnSpecificCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -46,11 +47,22 @@ Partial Class frmGrowth
         Me.btnCalculate.Text = "Predict the next 10 years"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'btnSpecificCalculate
+        '
+        Me.btnSpecificCalculate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSpecificCalculate.Location = New System.Drawing.Point(12, 380)
+        Me.btnSpecificCalculate.Name = "btnSpecificCalculate"
+        Me.btnSpecificCalculate.Size = New System.Drawing.Size(231, 48)
+        Me.btnSpecificCalculate.TabIndex = 2
+        Me.btnSpecificCalculate.Text = "Predict a certain year"
+        Me.btnSpecificCalculate.UseVisualStyleBackColor = True
+        '
         'frmGrowth
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnSpecificCalculate)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "frmGrowth"
@@ -62,4 +74,5 @@ Partial Class frmGrowth
 
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents btnSpecificCalculate As Button
 End Class
