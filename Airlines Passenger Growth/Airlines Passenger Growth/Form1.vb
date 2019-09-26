@@ -5,4 +5,7 @@
 
 Option Strict On
 Public Class frmGrowth
+    Const decGrowth As Decimal = (6.9D / 100)
+    Const dec2017 As ULong = 3800000000
+
 End Class
